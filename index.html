@@ -1,128 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/concerts/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Event Booster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script type="module" crossorigin src="/concerts/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/concerts/assets/styles-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/concerts/assets/index-Dv7U7hWJ.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/concerts/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/concerts/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
-
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
+      <div class="container header-content">
+        <div class="logo">
+          <img src="/concerts/assets/logo-H9i_2mjB.png" alt="logo" class="logo__img" />
+        </div>
+        <div class="header-title">
+          <h1 class="header-title__item">FIND BEST EVENTS AROUND THE WORLD</h1>
+        </div>
+        <form class="header-form">
+          <label for="search">
+            <input
+              type="text"
+              id="search"
+              placeholder="Start searching"
+              autocomplete="off"
+            />
+            <button type="submit" id="submit-search">
+              <img src="data:image/svg+xml,%3csvg%20viewBox='0%200%2012%2012'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='11.999954'%20height='12.000000'%20fill='none'%20customFrame='%23000000'%3e%3cg%20id='Group'%3e%3cpath%20id='Vector'%20d='M10.491%201.50905C9.51783%200.535922%208.22401%200%206.84783%200C5.47165%200%204.17783%200.535922%203.20473%201.50905C2.23162%202.48215%201.69568%203.77597%201.69568%205.15213C1.69568%206.41032%202.1439%207.59949%202.9644%208.53786L0.103078%2011.3992C-0.0343594%2011.5366%20-0.0343594%2011.7595%200.103078%2011.8969C0.171797%2011.9656%200.261867%2012%200.351914%2012C0.441961%2012%200.532055%2011.9656%200.60075%2011.8969L3.46209%209.03558C4.40046%209.85605%205.58963%2010.3043%206.84783%2010.3043C8.22403%2010.3043%209.51781%209.76838%2010.4909%208.79525C11.464%207.82215%2012%206.52833%2012%205.15215C12%203.77597%2011.4641%202.48215%2010.491%201.50905ZM9.99323%208.29755C8.25884%2010.0319%205.43684%2010.0319%203.70245%208.29755C1.96807%206.56318%201.96807%203.74114%203.70245%202.00677C4.56973%201.13948%205.7086%200.705984%206.84785%200.705984C7.98682%200.705984%209.12616%201.1397%209.99326%202.00677C11.7276%203.74112%2011.7276%206.56316%209.99323%208.29755Z'%20fill='rgb(146.625,146.625,146.625)'%20fill-rule='nonzero'%20transform='matrix(-1,0,0,1,12,0)'%20/%3e%3c/g%3e%3c/svg%3e" alt="search" />
+            </button>
+          </label>
+        </form>
+      </div>
+    </header>
+    <main class="main">
+      <section class="events">
+        <div class="container events-content">
+          <div class="cards"></div>
+          <div class="pagination"></div>
+        </div>
+      </section>
     </main>
-
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
-
+      <div class="container footer-content">
+        <span id="footer-content__title"
+          >© 2021 | All Rights Reserved | Developed with ♥ by Frotrest</span
+        >
+      </div>
+    </footer>
   </body>
 </html>
