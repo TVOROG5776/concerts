@@ -1,23 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Event Booster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+    <header class="header">
+      <div class="container header-content">
+        <div class="logo">
+          <img src="./img/logo.png" alt="logo" class="logo__img" />
+        </div>
+        <div class="header-title">
+          <h1 class="header-title__item">FIND BEST EVENTS AROUND THE WORLD</h1>
+        </div>
+        <form class="header-form">
+          <label for="search">
+            <input
+              type="text"
+              id="search"
+              placeholder="Start searching"
+              autocomplete="off"
+            />
+            <button type="submit" id="submit-search">
+              <img src="./img/search.svg" alt="search" />
+            </button>
+          </label>
+        </form>
+      </div>
+    </header>
+    <main class="main">
+      <section class="events">
+        <div class="container events-content">
+          <div class="cards"></div>
+          <div class="pagination"></div>
+        </div>
+      </section>
     </main>
-
-    <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
+    <footer class="footer">
+      <div class="container footer-content">
+        <span id="footer-content__title"
+          >© 2021 | All Rights Reserved | Developed with ♥ by Frotrest</span
+        >
+      </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/pagination.js"></script>
+    <script type="module" src="./js/modal.js"></script>
   </body>
 </html>

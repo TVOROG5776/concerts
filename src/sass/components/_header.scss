@@ -1,0 +1,156 @@
+.header {
+    background: url("../img/background.png") no-repeat center / cover, rgba(11, 11, 11, 0.5);
+    padding-top: 40px;
+    @media (max-width: 768px) {
+        & {
+            padding-top: 80px;
+        }
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        padding-bottom: 250px;
+        @media (max-width: 1200px) {
+                & {
+                    gap: 40px;
+                }
+            }
+        @media (max-width: 768px) {
+                & {
+                    gap: 25px;
+                    padding-bottom: 170px;
+                }
+            }            
+        .logo {
+            position: absolute;
+            left: 0;
+            top: 0;
+            @media (max-width: 1200px) {
+                    & > img {
+                        width: 205px;
+                    }
+                }
+            @media (max-width: 768px) {
+                    & > img {
+                        width: 110px;
+                    }
+                }                
+        }
+        .header-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            &__item {
+                width: 590px;
+                color: rgba(220, 86, 197, 1);
+                font-family: 'Montserrat';
+                font-size: 50px;
+                font-weight: 900;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+                margin: 0px;
+                @media (max-width: 1200px) {
+                    & {
+                        color: rgba(220, 86, 197, 1);
+                        font-family: 'Montserrat';
+                        font-size: 30px;
+                        font-weight: 900;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        width: 353px;
+                    }
+                }
+                @media (max-width: 768px) {
+                    & {
+                        color: rgba(220, 86, 197, 1);
+                        font-family: 'Montserrat';
+                        font-size: 18px;
+                        font-weight: 900;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        width: 212px;
+                    }
+                }        
+            }
+        }
+        .header-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            & > label {
+                position: relative;
+                border-radius: 20px;
+                backdrop-filter: blur(20px);
+                background: rgba(255, 255, 255, 0.2);
+                padding: 12.5px 30px 12.5px 30px;
+                width: 260px;
+                @media (max-width: 1200px) {
+                        & {
+                            width: 270px;
+                        }
+                    }
+            }
+            #search {
+                outline: none;
+                border: none;
+                color: rgba(147, 147, 147, 1);
+                font-family: 'Montserrat';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 100%;
+                letter-spacing: 0%;
+                width: 180px;
+                background: none;
+                @media (max-width: 1200px) {
+                        & {
+                            width: 170px;
+                        }
+                    }
+            }
+            #submit-search {
+                position: absolute;
+                right: 30px;
+                bottom: 0;
+                top: 0;
+                background: none;
+                border: none;
+                padding: 0px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .header-dropdown {
+            display: flex;
+            align-items: center;
+            gap: 70px;
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px 30px 15px 30px;
+            & > h5 {
+                color: rgba(147, 147, 147, 1);
+                font-family: 'Montserrat';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 100%;
+                letter-spacing: 0%;
+                margin: 0px;
+            }
+            & > img:hover {
+                cursor: pointer;
+            }
+            .dropdown-menu {
+                display: none;
+            }
+        }
+    }
+}

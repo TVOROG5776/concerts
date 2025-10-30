@@ -1,0 +1,48 @@
+@import './components/header';
+@import './components/footer';
+@import './components/_main/main-styles';
+@import './components/modal';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+    @media (max-width: 1200px) {
+        & {
+            width: 768px;
+        }
+    }
+    @media (max-width: 768px) {
+        & {
+            width: 320px;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.rectangle {
+    border: 1px solid rgba(220, 86, 197, 0.3);
+    border-radius: 50px 0px 50px 0px;
+    width: 153px;
+    height: 143px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    @media (max-width: 768px) {
+        & {
+            width: 108px;
+            height: 101px;
+        }
+    }
+}
